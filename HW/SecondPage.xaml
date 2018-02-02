@@ -1,0 +1,39 @@
+﻿<Page x:Class="HW.SecondPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:HW"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="SecondPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+        </Grid.RowDefinitions>
+        <Image Name="image" Grid.Row="0" Stretch="Fill"/>
+        <Button Content="Загрузить фото" Grid.Row="1" Click="BrowseImageButtonClick"/>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" Text="Введите логин" Grid.Row="2"/>
+        <TextBox Name="loginTextBox" Grid.Row="3"/>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="Введите пароль" Grid.Row="4"/>
+        <TextBox Name="passwordTextBox" Grid.Row="5"/>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="Повторите пароль" Grid.Row="6"/>
+        <TextBox Name="repeatPasswordTextBox" Grid.Row="7"/>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="Введите email" Grid.Row="8"/>
+        <TextBox Name="emailTextBox" Grid.Row="9"/>
+        <Button Content="Зарегистрироваться" Grid.Row="10" Click="RegisterButtonClick"/>
+        <Button Content="Назад" Grid.Row="11" Click="GoBackButtonClick"/>
+    </Grid>
+</Page>
